@@ -28,10 +28,13 @@ def predictions():
         return round(value_func(molecule), int(options['precision']))
 
     mock_prediction = {
+        "name": "Prediction Name",
         "image": Draw.MolsToGridImage([molecule], useSVG=True, molsPerRow=1),
-        "value1": "value 1",
-        "value2": "value 2",
-        "value3": "value 3"
+        "predictions": {
+            "Some Value1": "123.456",
+            "Some Value2": "456.789",
+            "Some Value3": "1011.12"
+        }
     }
 
 

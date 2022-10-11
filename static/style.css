@@ -24,8 +24,38 @@ body {
 /* PREDICTIONS */
 
 .predictions-wrapper {
-    grid-area: predictions;
+    display: flex;
+    flex-direction: column;
     margin-top: 1em;
+}
+
+.predictions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em 0.5em;
+}
+
+.prediction-item {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+    border: 1px solid #0a3d6285;
+}
+
+.prediction {
+    padding: 0.25em 0 0.25em 0;
+    font-weight: 500;
+}
+
+.prediction-name {
+    font-weight: 600;
+}
+
+.prediction-values {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1.5em;
 }
 
 /* SMILES FORM */
